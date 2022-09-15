@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Trabalho1 - Página de Classificados</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<center><h2>Página de Classificados</h2>
+<figure>
+	<img src="empregos.png" widht="200" height="300"
+		title = "Vagas de emprego">
+		<figcaption>Vagas de emprego<figcaption>
+		<a href="vagasemprego.html">Acessar informações</a><br><br>
+	<img src="tempotempo.png" widht="200" height="300"
+		title = "Previsão do tempo"><br><br>
+	<img src="promoçao.png" widht="200" height="300"
+		title = "Promoçoes de supermercado"><br><br>
+	<img src="empregos.png" widht="200" height="300"
+		title = "Vagas de emprego"><br><br>
+	<img src="empregos.png" widht="200" height="300"
+		title = "Vagas de emprego"><br><br>
+</center>
+
+<!--	
+imagens 
+venda e compra de carros
+venda de casas
+procura de empregos
+previsão do tempo 
+promoçoes mercado
+-->
+
+</body>
+</html>
