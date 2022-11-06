@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/monstro.ico.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: #ead7d0;
+        }
+        main{
+            background-color: rgb(162, 191, 164);
+            width: 1200px;
+            height: 900px;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 30px 4px #3c3c3c;
+        }
+        main > img{
+            height: 900px;
+            border-radius: 15px;
+        }
+        section > article{
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            padding-top: 70px;
+        }
+        main > section{
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            width: 685px;
+            height: 900px;
+        }
+        #login{
+            font-family: cursive;
+            font-size:60px;
+            font-weight: 1000;
+            color: #374b40;
+        }
+        .usu_senha{
+            font-family: cursive;
+            font-size: 30px;
+            color: #374b40;
+            margin: 10px 0px;
+        }
+        #info{
+            margin: 24px 0px;
+        }
+        .buttom{
+            font-family: cursive;
+            font-weight: 1000;
+            font-size: 17px;
+            background-color: #374b40;
+            border-radius: 10px;
+            padding: 20px;
+            color: #ffffff;
+            box-shadow: 0px 0px 10px 1px #3d3b3d;
+            margin: auto;
+            margin-top: 20px;
+            width: 130px;
+            transition: width 0.3s, font-size 0.3s;
+        }
+        .buttom:active{
+            width: 100px;
+            font-size: 12px;
+        }
+        #recuperar{
+            font-family: cursive;
+            font-size: 18px;
+        }
+        hr{
+            width: 500px;
+            border-color: #374b40;
+        }
+        #cadastro{
+            font-family: cursive;
+            font-size:30px;
+            font-weight: 800;
+            color: #374b40;
+        }
+        input{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 23px;
+            width: 400px;
+            height: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+    <title>Login de Usuário</title>
+</head>
+<body>
+    <main>
+        <img src="imagens/foto_prantinha.jpeg" alt="Plantas">
+        <section>
+            <article>
+                <p id="login">Login</p>
+                <hr>
+                <p class="usu_senha">Usuário</p>
+                <input type="text">
+                <p class="usu_senha">Senha</p>
+                <input type="text">
+                <p class="buttom">ENTER</p>
+                <p id="recuperar"><a href="https://www.portaldoguaiamum.com/wp-content/uploads/2022/09/0_XnbOuNxzwr3F_ZRV.jpg" target="_blank">Recuperar Senha</a></p>
+                <hr>
+                <p class="usu_senha" id="info">Ainda não possui uma conta?</p>
+                <p class="buttom">CADASTRE-SE</p>
+            </article>
+        </section>
+    </main>--
+</body>
+</html>
