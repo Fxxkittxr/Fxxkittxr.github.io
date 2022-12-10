@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/monstro.ico.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: #ead7d0;
+        }
+        main{
+            background-color: rgb(162, 191, 164);
+            width: 1850px;
+            height: 1800px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30PX;
+            border-radius: 15px;
+            box-shadow: 0px 0px 30px 4px #3c3c3c;
+        }
+        main > section{
+            display: inline-block;
+            vertical-align: top;
+            width: 1750px;
+            height: 600px;
+            text-align: center;
+        }
+        section > article{
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            justify-content: center;
+            padding-left: 60px;
+        }
+        main > img{
+            border-radius: 20px;
+            margin: center;
+        }
+        mark{
+            background-color:rgb(46, 245, 95);
+            border-radius: 5px;
+        }
+        input{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 200%;
+            width: 1450px;
+            height: 50px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 0px;
+            vertical-align: middle;
+            margin-top: 50px;
+        }
+        main > section > main > section{
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            width: 1200px;
+            height: 300px;
+            margin: 20px;
+        }
+        h1 {
+            font-family: cursive;
+            color: rgb(6, 246, 22);
+            -webkit-text-stroke-width: 5px;
+            -webkit-text-stroke-color: #000;
+            font-size: 70px;
+            font-weight: 900;
+
+        }
+        .buttom{
+            display: inline-block;
+            text-align: center;
+            font-family: cursive;
+            font-size: 50px;
+            background-color: #60997a;
+            border-radius: 10px;
+            padding: 20px 80px 20px 80px;
+            color: #000000;
+            box-shadow: 0px 0px 10px 1px #3d3b3d;
+            width: 1080px;
+            height: 60px;
+            margin-top: 20px;
+            margin-left: 20px;
+            transition: 0.3s;
+            align-items: center;
+        }
+        /* the gambiarra never dies */
+        .buttom p{
+            margin: 0px;
+        }
+        .buttom:active{
+            width:1000px;
+            font-size: 40px;
+        }
+        .buttom_seta{
+            border-radius: 5px;
+            padding-right: 50px;
+            padding-top: 20px;
+            padding-left: 0px;
+            color: #ffffff;
+            margin: auto;
+            margin-top: 15px;
+            width: 50px;
+            transition: width 0.3s;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+        }
+        .buttom_seta:active{
+            width: 40px;
+            font-size: 12px;
+        }
+        .buttom_pera1{
+            display: inline-block;
+            text-align: center;
+            font-family: cursive;
+            font-size: 25px;
+            font-weight: 1000;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px 150px 20px 60px;
+            color: #000000;
+            box-shadow: 0px 0px 10px 1px #3d3b3d;
+            width: 200px;
+            transition: 0.3s;
+            align-items: center;
+            margin-right: 0px;
+        }
+        .buttom_pera1:active{
+            width: 190px;
+            font-size: 12px;
+        }
+        .buttom_acess{
+            border-radius: 5px;
+            padding-right: 10px;
+            padding-top: 20px;
+            padding-left: 0px;
+            color: #ffffff;
+            margin: auto;
+            width: 70px;
+            transition: width 0.3s;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+        }
+        .buttom_acess:active{
+            width: 60px;
+            font-size: 12px;
+        }
+        #login{
+            font-family: cursive;
+            font-size:40px;
+            font-weight: 900;
+            color: #374b40;
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 45px;
+            margin-left: 1260px;
+        }
+        #cesta{
+            font-family: cursive;
+            font-size:40px;
+            font-weight: 900;
+            color: #374b40;
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 45px;
+        }
+        #name{
+            font-family: cursive;
+            font-size:70px;
+            font-weight: 900;
+            color: #18271f;
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 35px;
+            padding-right: 200px;
+        }
+        #info{
+            margin: 24px 0px;
+        }
+        #base{
+            padding-left: 47px;
+        }
+        #compra{
+            font-size: 23px;
+            width: 1850px;
+            height: 665px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #comprar{
+            background-color: #547061b2;
+            font-size: 23px;
+            width: 1700px;
+            height: 350px;
+            border-radius: 10px;
+            padding:20px;
+            margin-top: 30px;
+            box-shadow: 0px 0px 30px 4px #3c3c3c;
+        }
+        #comprar2{
+            background-color: #547061b2;
+            font-size: 23px;
+            width: 1700px;
+            height: 550px;
+            border-radius: 10px;
+            padding:20px;
+            display: inline-block;
+        }
+        #comprar3{
+            background-color: #547061b2;
+            font-size: 23px;
+            width: 1700px;
+            height: 350px;
+            border-radius: 10px;
+            padding:20px;
+            margin-top: 30px;
+            box-shadow: 0px 0px 30px 4px #3c3c3c;
+        }
+        #preco{
+            color: #098443;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 15px;
+        }
+        #parcelas{
+            font-family: cursive;
+            font-size: 50px;
+            font-weight: 900;
+            color: #18271f;
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        #endereco{
+            display: inline-block;
+            font-size: 70px;
+            font-weight: 800;
+            margin: 0px;
+            color: rgb(81, 187, 67);
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: #000;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #total{
+            background-color: #547061b2;
+            font-size: 23px;
+            width: 1700px;
+            height: 250px;
+            border-radius: 10px;
+            padding:20px;
+            margin-top: 30px;
+            box-shadow: 0px 0px 30px 4px #3c3c3c;
+        }
+        .cartao{
+            margin: 0px 10px 15px 0px;
+        }
+        .pera{
+            display: inline-block;
+            background-color: #60997a;
+            border-radius: 10px;
+            padding: 20px 80px 20px 80px;
+            color: #000000;
+            box-shadow: 0px 0px 10px 1px #3d3b3d;
+            width: 1300px;
+            height: 60px;
+            margin-top: 20px;
+            transition: 0.3s;
+            align-items: center;
+        }
+        #ou{
+            font-size: 40px;
+            font-family: cursive;
+            color: #000000;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        #valorcompra{
+            margin-left: 90px;
+            font-size: 60px;
+            font-family: cursive;
+            margin: 20px 20px 0px 1090px;
+        }
+        .precinho{
+            margin-top: 100px;
+        }
+        
+    </style>
+    <title>MichElle</title>
+</head>
+<body>
+    <main>
+        <section id="base">
+            <img class= "buttom_seta" onclick= history.back() src="imagens/seta.png" alt="Voltar", heigth= "40px", width="55">
+            <p id="cesta">Cesta</p>
+            <p id="login">Mich<mark>E</mark>lle.com</p>
+            <article id = "comprar">
+                <img id="cartao" src="imagens/local.png" alt="Estrelas", heigth= "90px", width="90px">
+                <h1 id = "endereco">Informe o CEP para entrega</h1>
+                <input type="text", placeholder="Insira aqui seu CEP">
+            </article>
+        </section>
+        <section id="compra">
+            <main id = "comprar2">
+                <div class="buttom_pera1">
+                    <a href="desweb_produto.html">
+                        <img src="imagens/pera_frente.jpg" alt="Peraphone", heigth= "300px", width="300px"></a>
+                </div>
+                    <section>
+                            <h1 id = "precinho">R$ 4.199,90</h1>
+                            <p id = "ou">OU</p>
+                            <img class="cartao" src="imagens/cartao.png" alt="Estrelas", heigth= "90px", width="90px">
+                            <p id="parcelas">Em até 12 vezes de 350,00 sem juros</p>
+                    </section>
+            </main>
+        </section>
+        <section id="base">
+            <article id = "total">
+                <h1 id = "endereco">Total </h1>
+                <a id ="valorcompra">R$1.199,90</a>
+                <p class="buttom">
+                    <a href="desweb_confirmacao.html">Comprar</a>
+                </p>
+            </article>
+            <img class= "buttom_acess" src="imagens/leitordetela.png" alt="MEnu", heigth= "40px", width="65">
+            <img class= "buttom_acess" src="imagens/libras.png" alt="MEnu", heigth= "100px", width="80px">
+            <img class= "buttom_acess" src="imagens/lupa.png" alt="MEnu", heigth= "40px", width="55">
+            <img class= "buttom_acess" src="imagens/altocontraste.png" alt="MEnu", heigth= "40px", width="65">
+        </section>
+    </main>
+</body>
+</html>
