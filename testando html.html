@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #6E4C59;
+        }
+        .cell {
+            width: 3rem;
+            height: 3rem;
+        }
+        .correct {
+            background-color: #6AA84F;
+            color: white;
+        }
+        .present {
+            background-color: #F1C232;
+            color: white;
+        }
+        .absent {
+            background-color: #333333;
+            color: white;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen">
+    <div class="text-center">
+        <div class="text-white text-2xl font-bold mb-4">TERMO</div>
+        <div class="grid grid-cols-5 gap-1 mb-2">
+            <div class="cell correct flex items-center justify-center">F</div>
+            <div class="cell absent flex items-center justify-center">Ú</div>
+            <div class="cell present flex items-center justify-center">R</div>
+            <div class="cell absent flex items-center justify-center">I</div>
+            <div class="cell correct flex items-center justify-center">A</div>
+        </div>
+        <div class="grid grid-cols-5 gap-1 mb-2">
+            <div class="cell absent flex items-center justify-center">P</div>
+            <div class="cell absent flex items-center justify-center">O</div>
+            <div class="cell correct flex items-center justify-center">N</div>
+            <div class="cell absent flex items-center justify-center">T</div>
+            <div class="cell absent flex items-center justify-center">E</div>
+        </div>
+        <div class="grid grid-cols-5 gap-1 mb-2">
+            <div class="cell correct flex items-center justify-center">S</div>
+            <div class="cell correct flex items-center justify-center">O</div>
+            <div class="cell correct flex items-center justify-center">D</div>
+            <div class="cell correct flex items-center justify-center">R</div>
+            <div class="cell correct flex items-center justify-center">A</div>
+        </div>
+        <div class="grid grid-cols-5 gap-1 mb-2">
+            <div class="cell correct flex items-center justify-center">S</div>
+            <div class="cell correct flex items-center justify-center">O</div>
+            <div class="cell correct flex items-center justify-center">G</div>
+            <div class="cell correct flex items-center justify-center">R</div>
+            <div class="cell correct flex items-center justify-center">A</div>
+        </div>
+        <div class="mt-4">
+            <div class="grid grid-cols-10 gap-1 mb-2">
+                <button class="cell bg-gray-700 text-white">Q</button>
+                <button class="cell bg-gray-700 text-white">W</button>
+                <button class="cell bg-gray-700 text-white">E</button>
+                <button class="cell bg-gray-700 text-white">R</button>
+                <button class="cell bg-gray-700 text-white">T</button>
+                <button class="cell bg-gray-700 text-white">Y</button>
+                <button class="cell bg-gray-700 text-white">U</button>
+                <button class="cell bg-gray-700 text-white">I</button>
+                <button class="cell bg-gray-700 text-white">O</button>
+                <button class="cell bg-gray-700 text-white">P</button>
+            </div>
+            <div class="grid grid-cols-9 gap-1 mb-2">
+                <button class="cell bg-gray-700 text-white">A</button>
+                <button class="cell bg-gray-700 text-white">S</button>
+                <button class="cell bg-gray-700 text-white">D</button>
+                <button class="cell bg-gray-700 text-white">F</button>
+                <button class="cell bg-gray-700 text-white">G</button>
+                <button class="cell bg-gray-700 text-white">H</button>
+                <button class="cell bg-gray-700 text-white">J</button>
+                <button class="cell bg-gray-700 text-white">K</button>
+                <button class="cell bg-gray-700 text-white">L</button>
+            </div>
+            <div class="grid grid-cols-7 gap-1 mb-2">
+                <button class="cell bg-gray-700 text-white">Z</button>
+                <button class="cell bg-gray-700 text-white">X</button>
+                <button class="cell bg-gray-700 text-white">C</button>
+                <button class="cell bg-gray-700 text-white">V</button>
+                <button class="cell bg-gray-700 text-white">B</button>
+                <button class="cell bg-gray-700 text-white">N</button>
+                <button class="cell bg-gray-700 text-white">M</button>
+            </div>
+            <button class="mt-4 py-2 px-6 bg-gray-700 text-white rounded">ENTER</button>
+        </div>
+    </div>
+</body>
+</html>
